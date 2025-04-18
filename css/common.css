@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Meow+Script&family=Nothing+You+Could+Do&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Puppies+Play&display=swap');
+
+/*
+font-family: "Lato";
+font-family: "Meow Script";
+font-family: "Nothing You Could Do";
+font-family: "Red Hat Display";
+font-family: "Puppies Play";
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+.entry_num{
+    position: fixed;
+    left: 10px;
+    top: 5px;
+    width: 72px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid #000;*/
+    border-radius: 50%;
+    font-size: 18px;
+    font-family: "Nothing You Could Do";
+}
+
+/*.nightMode .entry_num{
+    border: 1px solid rgba(255,255,255,.3);
+}*/
+
+#message_wrapper, .message_wrapper{
+    text-align: center;
+}
+
+#message, .message{
+    text-align: center;
+    font-family: "Nothing You Could Do";
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#quote_date, .quote_date{
+    text-align: center;
+    font-size: 12px;
+    font-family: "Lato";
+}
+
+#book, .book{
+    margin-top: 10px;
+    font-family: "Red Hat Display";
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+#quote_status, .quote_status{
+    height: 64px;
+    width: 100%;
+    background-image: url("../img/heartPageUnread.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.read{
+    background-image: url("../img/heartPageRead.png") !important;
+    font-family: "Puppies Play", serif;
+    font-size: 28px;
+    color: #900;
+}
+
+.nightMode .read{
+    color: white;
+}
+
+.read::after {
+  content: "N";
+}
+
+.comment{
+    margin: 15px auto;
+    font-family: "Red Hat Display";
+    font-size: 14px;
+    display: block;
+}
+
+.comment::before{
+    content: "\2764          \2764          \2764";
+    display: block;
+    white-space: pre;
+}
+
+.comment::after{
+    content: "-.--  ---  ..-     .-  .-.  .     --  -.--     .--.  .  .-.  ...  ---  -.";
+    display: block;
+}
+
+.comment:first-child{
+    margin-top: 0;
+}
+
+.comment:first-child::before, .comment:first-child::after{
+    content:"";
+    white-space: pre;
+    border-bottom: 1px solid #888;
+}
+
+.small{
+    font-size: 25px;
+    line-height: 26px;
+    display: inline-block;
+}
+
+.extra_small{
+    font-size: 23px;
+    line-height: 24px;
+    display: inline-block;
+}
+
+.extra_extra_small{
+    font-size: 20px;
+    line-height: 21px;
+    display: inline-block;
+}
+
+sup{
+    font-family: "Lato";
+    font-size: 10px;
+}
+
+.comment strong{
+    color: #f00;
+    font-size: 16px;
+}
+
+#book sup, .book sup{
+    font-size: 8px;
+}
+
+#hug{
+    height: 48px;
+}

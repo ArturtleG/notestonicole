@@ -1,0 +1,148 @@
+#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 25px;
+    font-family: "Lato";
+    font-size: 18px;
+    border: 1px solid #000;
+}
+
+#header, #footer {
+    background-color: rgba(255,255,255,0);
+    transition: opacity 0.3s ease;
+    z-index: 10;
+    position: fixed;
+    text-align: center;
+}
+
+#header{
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 1) 0%,        /* 0%: Fully opaque black at the bottom */
+        rgba(255, 255, 255, .9) 80%,
+        rgba(255, 255, 255, 0) 100%       /* 100%: Fully transparent at the top */
+    );
+}
+
+#footer{
+    background-image: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 1) 0%,        /* 0%: Fully opaque black at the bottom */
+        rgba(255, 255, 255, .9) 90%,
+        rgba(255, 255, 255, 0) 100%       /* 100%: Fully transparent at the top */
+    );
+}
+
+.nightMode #header, .nightMode #footer{
+    background-color: rgba(0,0,0,0);
+}
+
+.nightMode #header{
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 0%,        /* 0%: Fully opaque black at the bottom */
+        rgba(0, 0, 0, .6) 80%,
+        rgba(0, 0, 0, 0) 100%       /* 100%: Fully transparent at the top */
+    );
+}
+
+
+.nightMode #footer{
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 0%,        /* 0%: Fully opaque black at the bottom */
+        rgba(0, 0, 0, .7) 90%,
+        rgba(0, 0, 0, 0) 100%       /* 100%: Fully transparent at the top */
+    );
+}
+
+#header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+}
+
+#footer {
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#quote_date{
+    margin-top: 10px;
+    width: 100%;
+}
+
+#view_port{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    height: 100vh;
+}
+
+#header_spacer{
+    width: 100%;
+    height: 52px;
+}
+
+#footer_spacer{
+    width: 100%;
+    height: 140px;
+}
+
+
+
+.fade{
+    opacity: .2;
+}
+
+.nightMode, .nightMode #login{
+    background-color: black;
+    color: white;
+}
+
+.nightMode #login, .nightMode #book, .nightMode #buttonWrapper div{
+    border-color: white;
+}
+
+#button_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Nothing You Could Do";
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-top: -25px;
+}
+
+#button_wrapper [arrow]{
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nightMode #button_wrapper [arrow]{
+    border: 1px solid #fff;
+}
+
+@media (max-width: 600px){
+    #message_wrapper{
+        width: 80%;
+    }
+    
+    .edit_message_wrapper #message_wrapper{
+        width: auto;
+    }
+}

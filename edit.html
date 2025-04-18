@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>E - Daily Message</title>
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/edit.css">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://static1.codehs.com/cdn/chsfirebase/latest/chsfirebase.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    </head>
+    <body>
+        <div id="main_wrapper">
+            <div id="messages_display"></div>
+            <div id="header_buttons_wrapper">
+                <div id="all_messages_button" class="button">display all</div>
+                <div id="new_message_button" class="button">new</div>
+            </div>
+        </div>
+        <div id="modal_wrapper" class="no_display">
+            <div id="modal">
+                <div id="erase_message_wrapper" class="no_display">
+                    Are you sure you want to delete?
+                    <div id="no_delete" class='button'>no</div>
+                    <div id="yes_delete" class='button'>yes</div>
+                </div>
+                <div id="new_message_wrapper" class="no_display">
+                    <label>date</label>
+                    <input id="date_input" type="text">
+                    <label>source</label>
+                    <input id="source_input" type="text">
+                    <label>message</label>
+                    <textarea id="message_input" type="text"></textarea>
+                    <!--<label>read</label>
+                    <div id="read_input_wrapper">
+                        <label>Yes</label>
+                        <input name="read_input" type="radio">
+                        <label>No</label>
+                        <input name="read_input" type="radio">
+                    </div>-->
+                    <div id="new_message_button_wrapper">
+                        <div id="submit_new_button" class="button">submit</div>
+                        <div id="cancel_new_button" class="button">cancel</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="module" src="js/firebaseSetup.js"></script>
+    <script src="js/common.js"></script>
+    <!--<script type="module" src="js/main.js"></script>-->
+    <script type="module" src="js/edit.js"></script>
+</html>

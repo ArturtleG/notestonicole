@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Red+Hat+Display&display=swap');
+
+#countersWrapper{
+	text-align: center;
+	position: absolute;
+    right:5px;
+    top:5px;
+}
+
+.clockWrapper{
+    width: 120px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.clockTitle{
+	text-align: center;
+	font-family: "Lato";
+	font-size: 12px;
+}
+
+.digitsWrapper{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80px;
+}
+
+.digits, .label{
+	width: 20px;
+	font-family: 'Red Hat Display';
+}
+
+.digits{
+    display: flex;
+    justify-content: center;
+	overflow: hidden;
+	text-align: center;
+}
+
+.digit{
+	font-size: 12px;
+	width: 8px;
+}
+
+[days].digit{
+    width: 36px;
+}
+
+.label{
+	font-size: 10px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#cake{
+    width: 36px;
+    height: 36px;
+    background-image: url("../img/cake43B.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.nightMode #cake{
+    background-image: url("../img/cake43W.png");
+}
+
+#bday{
+	background-image: url("images/queenBanner.png");
+}
